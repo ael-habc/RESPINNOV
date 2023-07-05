@@ -17,17 +17,17 @@ function App() {
         </NavLink>
 
         <div>
-          <NavLink to="/about">Products</NavLink>
-          <NavLink to="/dashboard">About</NavLink>
-          <NavLink to="/home">Contact</NavLink>
+          <NavLink to="/product">Products</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
           <button type='submit' className="cart">cart</button>
         </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Product />} />
+        <Route path="/product" element={<Product />} />
         <Route path="/about" element={<About />} />
-        <Route path="/dashboard" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

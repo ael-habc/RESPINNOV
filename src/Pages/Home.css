@@ -1,0 +1,56 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-image: url("https://uploads-ssl.webflow.com/647f129a12b1f85e7a5da8eb/647f129a12b1f85e7a5da938_placeholder%201%20-%20wide.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  aspect-ratio: 2/1;
+  margin-top: -30px;
+}
+.header_title {
+  font-size: 64px;
+  font-weight: 700;
+}
+.header_text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #898d98;
+}
+#header_button {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  aspect-ratio: 2.5/1;
+  width: 9rem;
+}
+hr {
+    margin:0 50px;
+    color: #898d98;
+    margin-bottom: 50px;
+}
+.main {
+    display: flex;
+    margin:0 50px;
+    gap: 30px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.featured_product {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.featured_product p {
+    font-size: 20px;
+}

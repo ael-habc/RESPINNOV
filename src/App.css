@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
 .Nav {
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,6 @@
 .Nav a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   color: #32343a;
   font-size: 0.8rem;
   font-weight: 500;
@@ -24,9 +23,7 @@ img {
 .Nav a:hover {
   color: #201c1c;
 }
-.active {
-  color: red;
-}
+
 .cart {
   background-color: black;
   aspect-ratio: 2.5/1;
@@ -42,4 +39,14 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 50px;
+}
+.content h1 {
+  font-size: 40px;
+  font-weight: 600;
 }
