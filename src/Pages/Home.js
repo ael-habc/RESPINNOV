@@ -1,5 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Product from "../Card";
+import productList from "../ft_product.json";
+import logo from "../images/logo.svg";
 
 import "./Home.css";
 
@@ -44,9 +47,27 @@ export default function Home() {
         <h1>Featured Products</h1>
         <p>Check out new and popular products</p>
         <div className="featured_product_list">
-          
+          {productList.products.map((product) => (
+            <Product key={product.id} product={product} />
+          ))}
         </div>
       </div>
+      {/* <div className="footer">
+      <NavLink to="/" className="logo">
+          <img src={logo} alt="logo" />
+        </NavLink>
+        <div className="footer_menu">
+          <NavLink to="/product" className="footer_menu_item">
+            Products
+          </NavLink>
+          <NavLink to="/about" className="footer_menu_item">
+            About
+          </NavLink>
+          <NavLink to="/contact" className="footer_menu_item">
+            Contact
+          </NavLink>
+            </div> */}
+      {/* </div> */}
     </div>
   );
 }
