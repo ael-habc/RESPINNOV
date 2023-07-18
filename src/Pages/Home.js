@@ -1,12 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import Product from "../Card";
 import productList from "../ft_product.json";
-import logo from "../images/logo.svg";
-
 import "./Home.css";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="container">
       <div className="header">

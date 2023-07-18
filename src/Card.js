@@ -1,36 +1,26 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+
 
 import "./Card.css"
+import Modals from './Modals';
 
 
-export default function ActionAreaCard({product}) {
+export default function ProdCard({product}) {
   const {name, price, image} = product
-
-  console.log(image);
-
+  const prod_description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
+  const sub_Description = (desc) => {
+    if (desc.length > 50) {
+      return desc.substring(0, 50) + "..."
+    }
+    return desc
+  }
   return (
-    <Card className='prod'>
-      <CardActionArea>
-      <CardMedia
-          component="img"
-          height="140"
-          image={require(`${image}`)}
-          alt={name}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {price}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <div className='prod'>
+      <img src={require(`${image}`)} alt={name} />
+      <h1 className='prod_name'>{name}</h1>
+      <p className='prod_description'>{sub_Description(prod_description)}</p>
+      <p className='prod_price'>{price}</p>
+      <Modals name={name} />
+    </div>
   );
 }
