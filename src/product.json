@@ -3,282 +3,171 @@
       {
         "id": 1,
         "name": "Product 1",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 19.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 2,
         "name": "Product 2",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 29.99,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 3,
         "name": "Product 3",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 14.95,
-        "category": 2
-      },
-      {
-        "id": 4,
-        "name": "Product 4",
-        "image": "./images/products/product2.jpg",
-        "price": 9.99,
-        "category": 3
-      },
-      {
-        "id": 5,
-        "name": "Product 5",
-        "image": "./images/products/product2.jpg",
-        "price": 39.99,
-        "category": 4
+        "category": "Mindray WATO EX-65/55"
       },
       {
         "id": 6,
         "name": "Product 6",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 24.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 7,
         "name": "Product 7",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 17.50,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 8,
         "name": "Product 8",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 12.95,
-        "category": 2
-      },
-      {
-        "id": 9,
-        "name": "Product 9",
-        "image": "./images/products/product2.jpg",
-        "price": 21.99,
-        "category": 3
-      },
-      {
-        "id": 10,
-        "name": "Product 10",
-        "image": "./images/products/product2.jpg",
-        "price": 49.99,
-        "category": 4
+        "category": "Mindray WATO EX-65/55"
       },
       {
         "id": 11,
         "name": "Product 11",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 15.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 12,
         "name": "Product 12",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 34.99,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 13,
         "name": "Product 13",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 11.95,
-        "category": 2
-      },
-      {
-        "id": 14,
-        "name": "Product 14",
-        "image": "./images/products/product2.jpg",
-        "price": 7.99,
-        "category": 3
-      },
-      {
-        "id": 15,
-        "name": "Product 15",
-        "image": "./images/products/product2.jpg",
-        "price": 29.99,
-        "category": 4
+        "category": "Mindray WATO EX-65/55"
       },
       {
         "id": 16,
         "name": "Product 16",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 19.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 17,
         "name": "Product 17",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 39.99,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 18,
         "name": "Product 18",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 14.95,
-        "category": 2
-      },
-      {
-        "id": 19,
-        "name": "Product 19",
-        "image": "./images/products/product2.jpg",
-        "price": 9.99,
-        "category": 3
-      },
-      {
-        "id": 20,
-        "name": "Product 20",
-        "image": "./images/products/product2.jpg",
-        "price": 39.99,
-        "category": 4
+        "category": "Mindray WATO EX-65/55"
       },
       {
         "id": 21,
         "name": "Product 21",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 24.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 22,
         "name": "Product 22",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 17.50,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 23,
         "name": "Product 23",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 12.95,
-        "category": 2
+        "category": "Mindray WATO EX-65/55"
       },
-      {
-        "id": 24,
-        "name": "Product 24",
-        "image": "./images/products/product2.jpg",
-        "price": 21.99,
-        "category": 3
-      },
-      {
-        "id": 25,
-        "name": "Product 25",
-        "image": "./images/products/product2.jpg",
-        "price": 49.99,
-        "category": 4
-      },
+
       {
         "id": 26,
         "name": "Product 26",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 15.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 27,
         "name": "Product 27",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 34.99,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 28,
         "name": "Product 28",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 11.95,
-        "category": 2
-      },
-      {
-        "id": 29,
-        "name": "Product 29",
-        "image": "./images/products/product2.jpg",
-        "price": 7.99,
-        "category": 3
-      },
-      {
-        "id": 30,
-        "name": "Product 30",
-        "image": "./images/products/product2.jpg",
-        "price": 29.99,
-        "category": 4
+        "category": "Mindray WATO EX-65/55"
       },
       {
         "id": 31,
         "name": "Product 31",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 19.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 32,
         "name": "Product 32",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 39.99,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 33,
         "name": "Product 33",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 14.95,
-        "category": 2
-      },
-      {
-        "id": 34,
-        "name": "Product 34",
-        "image": "./images/products/product2.jpg",
-        "price": 9.99,
-        "category": 3
-      },
-      {
-        "id": 35,
-        "name": "Product 35",
-        "image": "./images/products/product2.jpg",
-        "price": 39.99,
-        "category": 4
+        "category": "Mindray WATO EX-65/55"
       },
       {
         "id": 36,
         "name": "Product 36",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A5 Advantage.jpeg",
         "price": 15.99,
-        "category": 0
+        "category":  "A5 Advantage"
       },
       {
         "id": 37,
         "name": "Product 37",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/A7 Advantage.jpeg",
         "price": 34.99,
-        "category": 1
+        "category": "A7 Advantage"
       },
       {
         "id": 38,
         "name": "Product 38",
-        "image": "./images/products/product2.jpg",
+        "image": "./images/products/Mindray WATO EX-6555.jpeg",
         "price": 11.95,
-        "category": 2
-      },
-      {
-        "id": 39,
-        "name": "Product 39",
-        "image": "./images/products/product2.jpg",
-        "price": 7.99,
-        "category": 3
-      },
-      {
-        "id": 40,
-        "name": "Product 40",
-        "image": "./images/products/product2.jpg",
-        "price": 29.99,
-        "category": 4
+        "category": "Mindray WATO EX-65/55"
       }
     ]
   }

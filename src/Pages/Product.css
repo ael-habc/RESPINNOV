@@ -1,3 +1,12 @@
+.pageProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100vh;
+    width: 100%;
+}
 .prooductList2 {
     display: flex;
     align-items: center;
@@ -6,4 +15,15 @@
     flex-wrap: wrap;
     height: 100vh;
     padding: 0 50px;
+}
+.modele {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.modele div {
+    margin: 20px;
 }
