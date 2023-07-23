@@ -1,13 +1,15 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Product from "../Card";
 import productList from "../ft_product.json";
 import "./Home.css";
+import logo from "../images/logo.svg";
+
 
 export default function Home() {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container">
       <div className="header">
@@ -53,11 +55,10 @@ export default function Home() {
           ))}
         </div>
       </div>
-      {/* <div className="footer">
-      <NavLink to="/" className="logo">
+      <div className="footer">
           <img src={logo} alt="logo" />
-        </NavLink>
         <div className="footer_menu">
+          <h1>Menu</h1>
           <NavLink to="/product" className="footer_menu_item">
             Products
           </NavLink>
@@ -67,8 +68,20 @@ export default function Home() {
           <NavLink to="/contact" className="footer_menu_item">
             Contact
           </NavLink>
-            </div> */}
-      {/* </div> */}
+        </div>
+        <div className="footer_menu">
+          <h1>Social Media</h1>
+          <NavLink to="/product" className="footer_menu_item">
+            instagram
+          </NavLink>
+          <NavLink to="/about" className="footer_menu_item">
+            facebook
+          </NavLink>
+          <NavLink to="/contact" className="footer_menu_item">
+            linkdin
+          </NavLink>
+        </div>
+      </div>
     </div>
   );
 }

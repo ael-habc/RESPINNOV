@@ -1,26 +1,57 @@
-import * as React from 'react';
 
 
-import "./Card.css"
-import Modals from './Modals';
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Modal from 'react-bootstrap/Modal';
 
-
-export default function ProdCard({product}) {
+function BasicExample({product}) {
   const {name, price, image} = product
-  const prod_description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."
-  const sub_Description = (desc) => {
-    if (desc.length > 50) {
-      return desc.substring(0, 50) + "..."
-    }
-    return desc
-  }
+  const [fullDiscription, setfullDiscription] = useState("lorem ipsum dolor sit amet cons ffffffffffffffffffffffffffffffffffffffffffffff")
+  console.log(fullDiscription);
   return (
-    <div className='prod'>
-      <img src={require(`${image}`)} alt={name} />
-      <h1 className='prod_name'>{name}</h1>
-      <p className='prod_description'>{sub_Description(prod_description)}</p>
-      <p className='prod_price'>{price}</p>
-      <Modals name={name} />
-    </div>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={require(`${image}`)} />
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>
+          {price}
+        </Card.Text>
+        <Example name={name} fullDiscription={fullDiscription}/>
+      </Card.Body>
+    </Card>
   );
 }
+
+export default BasicExample;
+
+
+
+function Example(props) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  console.log(props.fullDiscription);
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow}>
+        More About the product
+      </Button>
+
+      <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{props.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{props.fullDiscription}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="danger" onClick={handleClose}>
+            Close
+          </Button>
+          
+        </Modal.Footer>
+      </Modal>
+    </>
+  );
+}
+
