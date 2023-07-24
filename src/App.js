@@ -1,4 +1,4 @@
-import React , {createContext, useState}from "react";
+import React, { createContext, useState } from "react";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import logo from "./images/logo.svg";
 import "./App.css";
@@ -7,11 +7,12 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Cart from "./Cart";
 import Products from "./Pages/Product";
+import Reclamation from "./Pages/Reclamation";
 
 export const CartContext = createContext();
 
 function App() {
-  const [cart, setCart] = useState([])
+  const [cart, setCart] = useState([]);
   return (
     <CartContext.Provider value={{ cart, setCart }}>
       <BrowserRouter>
@@ -21,8 +22,9 @@ function App() {
           </NavLink>
 
           <div>
-            <NavLink to="/product">Products</NavLink>
             <NavLink to="/about">About</NavLink>
+            <NavLink to="/product">Products</NavLink>
+            <NavLink to="/reclamation">Reclamation</NavLink>
             <NavLink to="/cart">cart</NavLink>
           </div>
         </div>
@@ -31,8 +33,11 @@ function App() {
           <Route path="/product" element={<Products />} />
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/reclamation" element={<Reclamation />} />
         </Routes>
+        
       </BrowserRouter>
+      
     </CartContext.Provider>
   );
 }

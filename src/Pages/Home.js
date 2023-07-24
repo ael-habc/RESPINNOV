@@ -5,7 +5,6 @@ import productList from "../ft_product.json";
 import "./Home.css";
 import logo from "../images/logo.svg";
 
-
 export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,7 +55,7 @@ export default function Home() {
         </div>
       </div>
       <div className="footer">
-          <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" />
         <div className="footer_menu">
           <h1>Menu</h1>
           <NavLink to="/product" className="footer_menu_item">
@@ -65,19 +64,22 @@ export default function Home() {
           <NavLink to="/about" className="footer_menu_item">
             About
           </NavLink>
-          <NavLink to="/contact" className="footer_menu_item">
-            Contact
+          <NavLink to="/reclamation" className="footer_menu_item">
+            Reclamation
+          </NavLink>
+          <NavLink to="/cart" className="footer_menu_item">
+            cart
           </NavLink>
         </div>
         <div className="footer_menu">
           <h1>Social Media</h1>
-          <NavLink to="/product" className="footer_menu_item">
+          <NavLink to="/" className="footer_menu_item">
             instagram
           </NavLink>
-          <NavLink to="/about" className="footer_menu_item">
+          <NavLink to="/" className="footer_menu_item">
             facebook
           </NavLink>
-          <NavLink to="/contact" className="footer_menu_item">
+          <NavLink to="/" className="footer_menu_item">
             linkdin
           </NavLink>
         </div>

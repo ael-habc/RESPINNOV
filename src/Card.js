@@ -1,16 +1,12 @@
+import { useState, useContext } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Modal from "react-bootstrap/Modal";
+import { CartContext } from "./App";
 
-
-import { useState , useContext} from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Modal from 'react-bootstrap/Modal';
-import {CartContext} from './App'
-
-
-
-function BasicExample({product}) {
-  const {cart, setCart} = useContext(CartContext)
-  const {name, price, image} = product;
+function BasicExample({ product }) {
+  const { cart, setCart } = useContext(CartContext);
+  const { name, price, image } = product;
   function hundleCart(product) {
     const exist = cart.find((item) => item.id === product.id);
     if (exist) {
@@ -22,29 +18,31 @@ function BasicExample({product}) {
     } else {
       setCart([...cart, { ...product, qty: 1 }]);
     }
-    console.log(cart)
-  } 
-  const [fullDiscription, setfullDiscription] = useState("lorem ipsum dolor sit amet cons ffffffffffffffffffffffffffffffffffffffffffffff")
+    console.log(cart);
+  }
+  const [fullDiscription, setfullDiscription] = useState(
+    "lorem ipsum dolor sit amet cons ffffffffffffffffffffffffffffffffffffffffffffff"
+  );
   return (
-    <Card style={{ width: '18rem' }} id="t">
+    <Card style={{ width: "18rem" }} id="t">
       <Card.Img variant="top" src={require(`${image}`)} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Text>
-          {price}
-        </Card.Text>
-        <Example name={name} fullDiscription={fullDiscription}/>
-        <Button variant="primary" onClick={(e)=>hundleCart(product)}>
-        Add to Cart
-      </Button>
+        <Card.Text>{price}</Card.Text>
+        <Example name={name} fullDiscription={fullDiscription} />
+        {/* <Button
+          variant="primary"
+          
+          onClick={(e) => hundleCart(product)}
+        >
+          Add to Cart
+        </Button> */}
       </Card.Body>
     </Card>
   );
 }
 
 export default BasicExample;
-
-
 
 function Example(props) {
   const [show, setShow] = useState(false);
@@ -57,7 +55,12 @@ function Example(props) {
         More About the product
       </Button>
 
-      <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
         <Modal.Header closeButton>
           <Modal.Title>{props.name}</Modal.Title>
         </Modal.Header>
@@ -66,10 +69,8 @@ function Example(props) {
           <Button variant="danger" onClick={handleClose}>
             Close
           </Button>
-          
         </Modal.Footer>
       </Modal>
     </>
   );
 }
-

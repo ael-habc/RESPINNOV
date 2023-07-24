@@ -3,20 +3,23 @@
     {
       "id": 1,
       "name": "Product 1",
-      "image": "./images/products/product1.jpg",
-      "price": 19.99
+      "image": "./images/products/A5 Advantage.jpeg",
+      "price": 19.99,
+      "category":  "A5 Advantage"
     },
     {
       "id": 2,
       "name": "Product 2",
-      "image": "./images/products/product2.jpg",
-      "price": 29.99
+      "image": "./images/products/A7 Advantage.jpeg",
+      "price": 29.99,
+      "category": "A7 Advantage"
     },
     {
       "id": 3,
       "name": "Product 3",
-      "image": "./images/products/product3.jpg",
-      "price": 14.95
+      "image": "./images/products/Mindray WATO EX-6555.jpeg",
+      "price": 14.95,
+      "category": "Mindray WATO EX-65/55"
     }
   ]
 }
