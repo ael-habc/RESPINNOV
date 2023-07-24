@@ -52,7 +52,7 @@ function Example(props) {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        More About the product
+        Description du produit
       </Button>
 
       <Modal

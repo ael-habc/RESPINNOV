@@ -13,7 +13,7 @@ export default function Home() {
     <div className="container">
       <div className="header">
         <h1 className="header_title">RESPINNOV</h1>
-        <p className="header_text">Description of Respinnov</p>
+        {/* <p className="header_text">Description of Respinnov</p> */}
         <NavLink to="/Product" className="header_button">
           <button type="submit" className="cart" id="header_button">
             EXPLORE
@@ -21,33 +21,42 @@ export default function Home() {
         </NavLink>
       </div>
       <div className="content">
-        <h1>This is your space</h1>
-        <p>Talk about your business, your products, or yourself.</p>
+        <h1>RESPINNOV</h1>
+        <p>
+          Un souffle d'excellence technologique pour une éxperience de
+          respirateur d'anesthésie repensée
+        </p>
       </div>
       <hr />
       <div className="main">
         <div className="main_left">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-            imperdiet. Nunc ut sem vitae risus tristique posuere.
+            Bienvenue dans l&#39;univers de RespInnov, une plateforme numérique
+            révolutionnaire dédiée à l&#39;excellence de la gestion des
+            respirateurs d&#39;anesthésie de la multinationale chinoise Mindray.
+            RespInnov est bien plus qu&#39;un simple système informatisé ;
+            c&#39;est un écosystème complet conçu pour optimiser la performance,
+            la sécurité et l&#39;efficacité des respirateurs d’anesthésie vitaux
+            utilisés par les professionnels de santé au Maroc.
           </p>
         </div>
         <div className="main_right">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique. Duis cursus, mi quis
-            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
-            vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
-            imperdiet. Nunc ut sem vitae risus tristique posuere.
+            RespInnov est donc l&#39;aboutissement d&#39;une synergie sans
+            précédent entre technologie de pointe, expertise médicale et
+            engagement envers l&#39;amélioration continue. Elle est bien plus
+            qu&#39;une simple plateforme numérique : c&#39;est un partenaire
+            fiable pour les professionnels de santé, offrant des solutions
+            novatrices pour améliorer la gestion, la maintenance et la sécurité
+            des respirateurs d&#39;anesthésie de Mindray. Nous sommes déterminés
+            à repousser les limites de l&#39;innovation et à contribuer à un
+            environnement médical plus sûr et plus performant. Rejoignez-nous !
           </p>
         </div>
       </div>
       <div className="featured_product">
-        <h1>Featured Products</h1>
-        <p>Check out new and popular products</p>
+        <h1>Produits Populaires</h1>
+        <p>Découvrez les produits les plus populaires</p>
         <div className="featured_product_list">
           {productList.products.map((product) => (
             <Product key={product.id} product={product} />
