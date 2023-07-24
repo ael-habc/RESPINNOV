@@ -1,8 +1,8 @@
 import React from "react";
-import { useState} from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Modal from 'react-bootstrap/Modal';
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Modal from "react-bootstrap/Modal";
 import {
   MDBRow,
   MDBCol,
@@ -40,6 +40,18 @@ export default function Reclamation() {
         <option>Problèmes de contrôle de pression</option>
       </select>
       <br />
+      <label for="basic-url" class="form-label">
+        Your vanity URL
+      </label>
+      <div class="input-group mb-3">
+        <input
+          type="date"
+          class="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+          required
+        />
+      </div>
       <label for="exampleFormControlTextarea1" class="form-label">
         Niveau gravites
       </label>
@@ -50,13 +62,27 @@ export default function Reclamation() {
         <option value="3">Critique</option>
       </select>
       <br />
+      <label for="basic-url" class="form-label">
+        piece jointe (optionnel)
+      </label>
+      <div class="input-group mb-3">
+        <input
+          type="file"
+          class="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+          required
+        />
+      </div>
       <div class="form-floating">
         <textarea
           class="form-control"
-          placeholder="Leave a comment here"
+          placeholder="Impact sur le patient/Actions entreprises (optionnel)"
           id="floatingTextarea"
         ></textarea>
-        <label for="floatingTextarea">Impact sur le patient/Actions entreprises (optionnel)</label>
+        <label for="floatingTextarea">
+          Impact sur le patient/Actions entreprises (optionnel)
+        </label>
       </div>
       <br />
       <div class="d-grid gap-3 col-4 mx-auto ">
@@ -80,7 +106,12 @@ function Example(props) {
         Historique
       </Button>
 
-      <Modal show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
         <Modal.Header closeButton>
           <Modal.Title>{props.name}</Modal.Title>
         </Modal.Header>
@@ -89,10 +120,8 @@ function Example(props) {
           <Button variant="danger" onClick={handleClose}>
             Close
           </Button>
-          
         </Modal.Footer>
       </Modal>
     </>
   );
 }
-
