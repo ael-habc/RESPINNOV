@@ -1,26 +1,4 @@
-.prod {
-    width: 25%;
-    aspect-ratio: 1/1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    background-color: #fff;
-    overflow: hidden;
-    cursor: pointer;
-    text-align: center;
-
-}
-.prod img{
-    width: 100%;
-    height: 70%;
-    transition: all 0.5s ease-in-out;
-}
-
-.prod:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-.prod_description {
-    font-size: x-small;
+.card {
+    margin-bottom: 40px;
+    width: 300px;
 }

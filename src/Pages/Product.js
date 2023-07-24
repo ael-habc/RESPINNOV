@@ -9,7 +9,7 @@ export default function Products() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [products]);
-
+  
   const fillterData = (data, category) => {
     if (category === "all") {
       setProducts(data.products);
@@ -44,7 +44,7 @@ export default function Products() {
       </div>
       <div className="prooductList2">
         {products.map((product) => (
-          <Product key={product.id} product={product} />
+          <Product key={product.id} product={product}/>
         ))}
       </div>
     </div>
