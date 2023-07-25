@@ -6,7 +6,7 @@ import { CartContext } from "./App";
 
 function BasicExample({ product }) {
   const { cart, setCart } = useContext(CartContext);
-  const { name, price, image } = product;
+  const { name, price, image, description} = product;
   function hundleCart(product) {
     const exist = cart.find((item) => item.id === product.id);
     if (exist) {
@@ -20,23 +20,14 @@ function BasicExample({ product }) {
     }
     console.log(cart);
   }
-  const [fullDiscription, setfullDiscription] = useState(
-    "lorem ipsum dolor sit amet cons ffffffffffffffffffffffffffffffffffffffffffffff"
-  );
+  
   return (
     <Card style={{ width: "18rem" }} id="t">
       <Card.Img variant="top" src={require(`${image}`)} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{price}</Card.Text>
-        <Example name={name} fullDiscription={fullDiscription} />
-        {/* <Button
-          variant="primary"
-          
-          onClick={(e) => hundleCart(product)}
-        >
-          Add to Cart
-        </Button> */}
+        <Example name={name} fullDiscription={description} />
       </Card.Body>
     </Card>
   );

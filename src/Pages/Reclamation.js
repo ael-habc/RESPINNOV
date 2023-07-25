@@ -1,34 +1,73 @@
 import React from "react";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
-import {
-  MDBRow,
-  MDBCol,
-  MDBInput,
-  MDBCheckbox,
-  MDBBtn,
-} from "mdb-react-ui-kit";
+import { MDBInput } from "mdb-react-ui-kit";
 import "./Reclamation.css";
-import { NavLink } from "react-router-dom";
 
 export default function Reclamation() {
+  const [reclamation, setReclamation] = useState([]);
+  const [idResponsable, setIdResponsable] = useState("");
+  const [symptomes, setSymptomes] = useState("");
+  const [date, setDate] = useState("");
+  const [gravite, setGravite] = useState("");
+  const [pieceJointe, setPieceJointe] = useState("");
+  const [impact, setImpact] = useState("");
+
+  const hundleSubmit = () => {
+    if(!idResponsable || !symptomes || !date || !gravite) {
+      alert("Please fill all the fields");
+      return;
+    }
+
+    const newReclamation = {
+      idResponsable,
+      symptomes,
+      date,
+      gravite,
+      pieceJointe,
+      impact
+    }
+    setReclamation([...reclamation, newReclamation]);
+    setIdResponsable("");
+    setSymptomes("");
+    setDate("");
+    setGravite("");
+    setPieceJointe("");
+    setImpact("");
+    newReclamation.idResponsable = "";
+    newReclamation.symptomes = "";
+    newReclamation.date = "";
+    newReclamation.gravite = "";
+    newReclamation.pieceJointe = "";
+    newReclamation.impact = "";
+    console.log(reclamation);
+
+  };
+
   return (
-    <form className="form">
-      <label for="exampleFormControlTextarea1" class="form-label">
+    <div className="form">
+      <label htmlFor="exampleFormControlTextarea1" className="form-label" >
         ID responsable
       </label>
       <MDBInput
         wrapperClass="mb-4"
         id="form6Example3"
         placeholder="ID responsable"
+        value={idResponsable}
+        onChange={(e) => setIdResponsable(e.target.value)}
         required
       />
-      <label for="exampleFormControlTextarea1" class="form-label">
+      <label htmlFor="exampleFormControlTextarea1" className="form-label">
         Symptomes Observes
       </label>
-      <select class="form-select" aria-label="Symptomes Observes" required>
+      <select
+        className="form-select"
+        aria-label="Symptomes Observes"
+        value={symptomes}
+        onChange={(e) => setSymptomes(e.target.value)}
+        required
+      >
         <option value="1">Arrêt soudain du fonctionnement</option>
         <option value="2">Problèmes d&#39;alimentation électrique</option>
         <option>Alarmes fréquentes</option>
@@ -40,58 +79,69 @@ export default function Reclamation() {
         <option>Problèmes de contrôle de pression</option>
       </select>
       <br />
-      <label for="basic-url" class="form-label">
+      <label htmlFor="basic-url" className="form-label">
         Your vanity URL
       </label>
-      <div class="input-group mb-3">
+      <div className="input-group mb-3">
         <input
           type="date"
-          class="form-control"
+          className="form-control"
           id="basic-url"
           aria-describedby="basic-addon3"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
           required
         />
       </div>
-      <label for="exampleFormControlTextarea1" class="form-label">
+      <label htmlFor="exampleFormControlTextarea1" className="form-label">
         Niveau gravites
       </label>
-      <select class="form-select" aria-label="Niveau gravites" required>
+      <select className="form-select" aria-label="Niveau gravites" required value={gravite} onChange={(e)=>setGravite(e.target.value)}>
         <option value="1">Mineur</option>
         <option value="2">Modéré</option>
         <option value="4">Majeur</option>
         <option value="3">Critique</option>
       </select>
       <br />
-      <label for="basic-url" class="form-label">
+      <label htmlFor="basic-url" className="form-label">
         piece jointe (optionnel)
       </label>
-      <div class="input-group mb-3">
+      <div className="input-group mb-3">
         <input
           type="file"
-          class="form-control"
+          className="form-control"
           id="basic-url"
           aria-describedby="basic-addon3"
+          value={pieceJointe}
+          onChange={(e) => setPieceJointe(e.target.value)}
           required
+
         />
       </div>
-      <div class="form-floating">
+      <div className="form-floating">
         <textarea
-          class="form-control"
+          className="form-control"
           placeholder="Impact sur le patient/Actions entreprises (optionnel)"
           id="floatingTextarea"
+          value={impact}
+          onChange={(e) => setImpact(e.target.value)}
         ></textarea>
-        <label for="floatingTextarea">
+        <label htmlFor="floatingTextarea">
           Impact sur le patient/Actions entreprises (optionnel)
         </label>
       </div>
       <br />
-      <div class="d-grid gap-3 col-4 mx-auto ">
-        <Example />
-        <button type="submit" class="btn btn-success btn-lg">
+      <div className="d-grid gap-3 col-4 mx-auto ">
+        <Example reclamation={reclamation} />
+        <button
+          type="submit"
+          className="btn btn-success btn-lg"
+          onClick={() => hundleSubmit()}
+        >
           confirmer
         </button>
       </div>
-    </form>
+    </div>
   );
 }
 
@@ -105,23 +155,29 @@ function Example(props) {
       <Button variant="secondary" className="btn-lg" onClick={handleShow}>
         Historique
       </Button>
+    {props.reclamation.map((reclamation) => 
+      (
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Historique</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>id responsable : {reclamation.idResponsable}</p>
+            <p>symptomes : {reclamation.symptomes}</p>
+            <p>date : {reclamation.date}</p>
+            <p>gravite : {reclamation.gravite}</p>
+            <p>piece jointe : {reclamation.pieceJointe}</p>
+            <p>impact : {reclamation.impact}</p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Fermer
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      ))}
 
-      <Modal
-        show={show}
-        onHide={handleClose}
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{props.name}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{props.fullDiscription}</Modal.Body>
-        <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      
     </>
   );
 }
