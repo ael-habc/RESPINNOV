@@ -3,13 +3,15 @@ import data from "../product.json";
 import Product from "../Card";
 import "./Product.css";
 import { Button, ButtonGroup, Radio } from 'bootstrap-4-react';
+import pieces from "../pieces.json";
 
 export default function Products() {
   const [products, setProducts] = useState(data.products);
+  const [pieces, setPieces] = useState();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [products]);
-  
+
   const fillterData = (data, category) => {
     if (category === "all") {
       setProducts(data.products);
@@ -46,6 +48,7 @@ export default function Products() {
         {products.map((product) => (
           <Product key={product.id} product={product}/>
         ))}
+        
       </div>
     </div>
   );

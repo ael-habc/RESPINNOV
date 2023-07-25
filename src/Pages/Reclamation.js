@@ -132,7 +132,7 @@ export default function Reclamation() {
       </div>
       <br />
       <div className="d-grid gap-3 col-4 mx-auto ">
-        <Example reclamation={reclamation} />
+        <Example />
         <button
           type="submit"
           className="btn btn-success btn-lg"
@@ -155,29 +155,22 @@ function Example(props) {
       <Button variant="secondary" className="btn-lg" onClick={handleShow}>
         Historique
       </Button>
-    {props.reclamation.map((reclamation) => 
-      (
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Historique</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <p>id responsable : {reclamation.idResponsable}</p>
-            <p>symptomes : {reclamation.symptomes}</p>
-            <p>date : {reclamation.date}</p>
-            <p>gravite : {reclamation.gravite}</p>
-            <p>piece jointe : {reclamation.pieceJointe}</p>
-            <p>impact : {reclamation.impact}</p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Fermer
-            </Button>
-          </Modal.Footer>
-        </Modal>
-      ))}
-
-      
+      <Modal
+        show={show}
+        onHide={handleClose}
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>{props.name}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{props.fullDiscription}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="danger" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
