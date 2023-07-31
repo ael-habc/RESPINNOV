@@ -1,149 +1,48 @@
 {
     "pieces": [
       {
-        "id": 1,
-        "name": "Filtres d’humidification",
-        "price": 19.99,
-        "category": "Filtres"
-      },
-      {
-        "id": 2,
-        "name": "Filtres bactérien/viral",
-        "price": 24.99,
-        "category": "Filtres"
-      },
-      {
         "id": 3,
         "name": "Filtres HEPA",
         "price": 29.99,
-        "category": "Filtres"
-      },
-      {
-        "id": 4,
-        "name": "Tubulures inspiratoires et expiratoires",
-        "price": 12.99,
-        "category": "Tubulures et tuyaux"
-      },
-      {
-        "id": 5,
-        "name": "Tuyau d’oxygène",
-        "price": 8.99,
-        "category": "Tubulures et tuyaux"
-      },
-      {
-        "id": 6,
-        "name": "Tuyau d’évacuation des gaz usés",
-        "price": 14.99,
-        "category": "Tubulures et tuyaux"
-      },
-      {
-        "id": 7,
-        "name": "Tubulure de pression",
-        "price": 9.99,
-        "category": "Tubulures et tuyaux"
+        "category": "Filtres",
+        "image":"./images/Filtres.jpg"
       },
       {
         "id": 8,
         "name": "Tubulures d’aspiration",
         "price": 11.99,
-        "category": "Tubulures et tuyaux"
-      },
-      {
-        "id": 9,
-        "name": "Masque facial à usage unique",
-        "price": 5.99,
-        "category": "Masques faciaux et circuits respiratoires"
-      },
-      {
-        "id": 10,
-        "name": "Masque facial réutilisable",
-        "price": 12.99,
-        "category": "Masques faciaux et circuits respiratoires"
-      },
-      {
-        "id": 11,
-        "name": "Masque facial pédiatrique",
-        "price": 7.99,
-        "category": "Masques faciaux et circuits respiratoires"
-      },
-      {
-        "id": 12,
-        "name": "Tuyau inspiratoire/expiratoire",
-        "price": 6.99,
-        "category": "Masques faciaux et circuits respiratoires"
-      },
-      {
-        "id": 13,
-        "name": "Connecteurs et adaptateurs",
-        "price": 3.99,
-        "category": "Masques faciaux et circuits respiratoires"
-      },
-      {
-        "id": 14,
-        "name": "Capteur d’oxygène (SPO2)",
-        "price": 39.99,
-        "category": "Capteurs"
-      },
-      {
-        "id": 15,
-        "name": "Capteur de pression",
-        "price": 29.99,
-        "category": "Capteurs"
-      },
-      {
-        "id": 16,
-        "name": "Capteur de débit",
-        "price": 34.99,
-        "category": "Capteurs"
-      },
-      {
-        "id": 17,
-        "name": "Capteur de CO2",
-        "price": 41.99,
-        "category": "Capteurs"
-      },
-      {
-        "id": 18,
-        "name": "Capteur de température",
-        "price": 22.99,
-        "category": "Capteurs"
-      },
-      {
-        "id": 19,
-        "name": "Valve d’inhalation/exhalation",
-        "price": 7.99,
-        "category": "Valves et membranes"
-      },
-      {
-        "id": 20,
-        "name": "Valve expiratoire",
-        "price": 6.99,
-        "category": "Valves et membranes"
-      },
-      {
-        "id": 21,
-        "name": "Membrane de pression",
-        "price": 9.99,
-        "category": "Valves et membranes"
-      },
-      {
-        "id": 22,
-        "name": "Soupape de sécurité",
-        "price": 11.99,
-        "category": "Valves et membranes"
-      },
-      {
-        "id": 23,
-        "name": "Batterie interne",
-        "price": 49.99,
-        "category": "Batteries"
+        "category": "Tubulures et tuyaux",
+        "image":"./images/Tubulures et tuyaux.jpg"
       },
       {
         "id": 24,
         "name": "Batterie externe",
         "price": 39.99,
-        "category": "Batteries"
+        "category": "Batteries",
+        "image":"./images/Batteries.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Capteur de température",
+        "price": 22.99,
+        "category": "Capteurs",
+        "image":"./images/Capteurs.PNG"
+      },
+      {
+        "id": 19,
+        "name": "Valve d’inhalation/exhalation",
+        "price": 7.99,
+        "category": "Valves et membranes",
+        "image":"./images/Valves et membranes.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Connecteurs et adaptateurs",
+        "price": 3.99,
+        "category": "Masques faciaux et circuits respiratoires",
+        "image":"./images/Masques faciaux et circuits respiratoires.jpg"
       }
+      
     ]
   }
   

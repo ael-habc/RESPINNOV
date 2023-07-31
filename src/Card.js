@@ -1,25 +1,25 @@
-import { useState, useContext } from "react";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
-import { CartContext } from "./App";
+// import { CartContext } from "./App";
 
 function BasicExample({ product }) {
-  const { cart, setCart } = useContext(CartContext);
+  // const { cart, setCart } = useContext(CartContext);
   const { name, price, image, description} = product;
-  function hundleCart(product) {
-    const exist = cart.find((item) => item.id === product.id);
-    if (exist) {
-      setCart(
-        cart.map((item) =>
-          item.id === product.id ? { ...exist, qty: exist.qty + 1 } : item
-        )
-      );
-    } else {
-      setCart([...cart, { ...product, qty: 1 }]);
-    }
-    console.log(cart);
-  }
+  // function hundleCart(product) {
+  //   const exist = cart.find((item) => item.id === product.id);
+  //   if (exist) {
+  //     setCart(
+  //       cart.map((item) =>
+  //         item.id === product.id ? { ...exist, qty: exist.qty + 1 } : item
+  //       )
+  //     );
+  //   } else {
+  //     setCart([...cart, { ...product, qty: 1 }]);
+  //   }
+  //   console.log(cart);
+  // }
   
   return (
     <Card style={{ width: "18rem" }} id="t">

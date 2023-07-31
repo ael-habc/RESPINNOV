@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import data from "../product.json";
-import Product from "../Card";
+import data from "../pieces.json";
+import Product from "../Card2";
 import "./Product.css";
 import { Button, ButtonGroup, Radio } from 'bootstrap-4-react';
-import pieces from "../pieces.json";
 
 export default function Products() {
-  const [products, setProducts] = useState(data.products);
-  const [pieces, setPieces] = useState();
+  console.log(data.pieces);
+  const [products, setProducts] = useState(data.pieces);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [products]);
@@ -17,7 +16,7 @@ export default function Products() {
       setProducts(data.products);
       return;
     }
-    const newData = data.products.filter((item) => item.category === category);
+    const newData = data.pieces.filter((item) => item.category === category);
     setProducts(newData);
   };
   return (
@@ -28,17 +27,24 @@ export default function Products() {
           <Radio autoComplete="off" />
           All Product
         </Button>
-        <Button secondary as="label"  onClick={() => fillterData(data, "A5 Advantage")}>
+        <Button secondary as="label"  onClick={() => fillterData(data, "Filtres")}>
           <Radio autoComplete="off" />
-          A5 Advantage
+          Filtres        </Button>
+        <Button secondary as="label" onClick={()=> fillterData(data,"Tubulures et tuyaux")} >
+          <Radio autoComplete="off" />
+          Tubulures et tuyaux
         </Button>
-        <Button secondary as="label" onClick={()=> fillterData(data,"A7 Advantage")} >
+        <Button secondary as="label" onClick={()=>fillterData(data,"Masques faciaux et circuits respiratoires")}>
           <Radio autoComplete="off" />
-          A7 Advantage
+          Masques faciaux et circuits respiratoires
         </Button>
-        <Button secondary as="label" onClick={()=>fillterData(data,"Mindray WATO EX-65/55")}>
+        <Button secondary as="label" onClick={()=>fillterData(data,"Capteurs")}>
           <Radio autoComplete="off" />
-          Mindray WATO EX-65/55
+          Capteurs
+        </Button>
+        <Button secondary as="label" onClick={()=>fillterData(data,"Batteries")}>
+          <Radio autoComplete="off" />
+          Batteries
         </Button>
         
       </ButtonGroup>

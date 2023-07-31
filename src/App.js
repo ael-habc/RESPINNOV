@@ -23,7 +23,7 @@ function App() {
 
           <div>
             <NavLink to="/about">About</NavLink>
-            <NavLink to="/product">Products</NavLink>
+            <NavLink to="/product">pieces de rechange</NavLink>
             <NavLink to="/reclamation">Reclamation</NavLink>
             <NavLink to="/cart">cart</NavLink>
           </div>

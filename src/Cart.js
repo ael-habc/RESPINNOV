@@ -74,7 +74,7 @@ function CartEl({ item }) {
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
             <MDBTypography tag="h5" className="mb-0">
-              {price}
+              {price * qty}
             </MDBTypography>
           </MDBCol>
           <MDBCol md="1" lg="1" xl="1" className="text-end">

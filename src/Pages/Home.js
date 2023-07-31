@@ -4,6 +4,7 @@ import Product from "../Card";
 import productList from "../ft_product.json";
 import "./Home.css";
 import logo from "../images/logo.svg";
+import Caroussel from "../Caroussel";
 
 export default function Home() {
   useEffect(() => {
@@ -11,15 +12,17 @@ export default function Home() {
   }, []);
   return (
     <div className="container">
-      <div className="header">
-        <h1 className="header_title">RESPINNOV</h1>
+      <Caroussel/>
+      {/* <div className="header"> */}
+        {/* <h1 className="header_title">RESPINNOV</h1>
         {/* <p className="header_text">Description of Respinnov</p> */}
-        <NavLink to="/Product" className="header_button">
-          <button type="submit" className="cart" id="header_button">
-            EXPLORE
-          </button>
-        </NavLink>
-      </div>
+        {/* <NavLink to="/Product" className="header_button"> */}
+          {/* <button type="submit" className="cart" id="header_button"> */}
+            {/* EXPLORE */}
+          {/* </button> */}
+        {/* </NavLink>  */}
+      {/* </div> */}
+
       <div className="content">
         <h1>RESPINNOV</h1>
         <p>
