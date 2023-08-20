@@ -6,7 +6,7 @@ import Modal from "react-bootstrap/Modal";
 
 function BasicExample({ product }) {
   // const { cart, setCart } = useContext(CartContext);
-  const { name, price, image, description} = product;
+  const { name, price, image, description } = product;
   // function hundleCart(product) {
   //   const exist = cart.find((item) => item.id === product.id);
   //   if (exist) {
@@ -20,14 +20,22 @@ function BasicExample({ product }) {
   //   }
   //   console.log(cart);
   // }
-  
+
   return (
     <Card style={{ width: "18rem" }} id="t">
       <Card.Img variant="top" src={require(`${image}`)} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{price}</Card.Text>
-        <Example name={name} fullDiscription={description} />
+
+        <a
+          href={require(`${description}`)}
+          download={description}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button variant="primary">Download details</Button>
+        </a>
       </Card.Body>
     </Card>
   );
@@ -35,33 +43,30 @@ function BasicExample({ product }) {
 
 export default BasicExample;
 
-function Example(props) {
-  const [show, setShow] = useState(false);
+// function Example(props) {
+//   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
-        Description du produit
-      </Button>
+//   const handleClose = () => setShow(false);
+//   const handleShow = () => setShow(true);
+//   return (
+//     <>
 
-      <Modal
-        show={show}
-        onHide={handleClose}
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{props.name}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>{props.fullDiscription}</Modal.Body>
-        <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </>
-  );
-}
+//       <Modal
+//         show={show}
+//         onHide={handleClose}
+//         aria-labelledby="contained-modal-title-vcenter"
+//         centered
+//       >
+//         <Modal.Header closeButton>
+//           <Modal.Title>{props.name}</Modal.Title>
+//         </Modal.Header>
+//         <Modal.Body>{props.fullDiscription}</Modal.Body>
+//         <Modal.Footer>
+//           <Button variant="danger" onClick={handleClose}>
+//             Close
+//           </Button>
+//         </Modal.Footer>
+//       </Modal>
+//     </>
+//   );
+// }

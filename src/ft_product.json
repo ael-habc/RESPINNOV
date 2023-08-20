@@ -6,7 +6,7 @@
       "image": "./images/products/A5 Advantage.jpeg",
       "price": 19.99,
       "category":  "A5 Advantage",
-      "description": "Le système d'anesthésie A5 Advantage offre une évolutivité modulaire avec des modes de ventilation avancés et une technologie numérique avec des boucles d'analyse de gaz, de capnographie et de spirométrie intégrées en option pour des soins efficaces sur un large éventail de types de patients, du nouveau-né à l'obésité. L'aide à la décision à faible débit est disponible avec l'Optimizer™. Les stratégies de protection pulmonaire sont soutenues par des capacités APRV et de manœuvre de recrutement. Une interface utilisateur intuitive avec écran tactile facilite les changements de modes et de paramètres de ventilation en éliminant le menu détaillé, les boutons de commande et les boutons dédiés. Les fonctions de sécurité intégrées, le vaste espace de stockage et de travail améliorent le flux de travail avec des options de montage d'accessoires dans une conception ergonomique primée. Caractéristiques standards : mode de respiration manuel/spontané avec capacité de surveillance respiratoire, les modes ventilatoires incluent VCV, PCV avec volume garanti, CPAP/aide inspiratoire, SIMV-VC, SIMV-PC, éclairage LED à luminosité réglable, débitmètres auxiliaires d'O2/d'air fournissant un mélange de gaz pour réduire le risque d'incendie des voies respiratoires, système respiratoire chauffé minimisant la condensation interne, connectivité HL7 pour l'intégration AIMS (gestion des informations d'anesthésie) et EMR (dossiers médicaux électroniques), gaz d'appoint O2/Air/N2O, compatible avec les moniteurs du patient de Mindray."
+      "description": "./A9_Brochure.pdf"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "image": "./images/products/A7 Advantage.jpeg",
       "price": 29.99,
       "category": "A7 Advantage",
-      "description":"La station d'anesthésie A7 Advantage élargit encore les capacités des séries A grâce à la technologie de contrôle électronique des gaz frais pour assurer une dynamique de flux précise ainsi qu'un soutien précis et réactif pour vos exigences cliniques et de réduction des coûts y compris l'administration d'anesthésiques à faible débit. Une interface utilisateur intuitive et des modes de ventilation avancés permettent des soins efficaces pour un large éventail de types de patients, de la néonatalogie à l'obésité. L'Optimizer™ fournit des outils pour prendre en charge l'anesthésie à faible débit et capturer les données de consommation d'agents à la fois pendant et après chaque cas. Caractéristiques standards : contrôle électronique du gaz frais avec choix de paramètres de débit total et de débit direct pour une administration précise et réactive de l'anesthésie, modes ventilatoires incluant VCV, PCV avec volume garanti, CPAP/aide inspiratoire, SIMV-VC, SIMV-PC, conformité automatique et compensation de gaz frais maintenant des volumes courants précis, système respiratoire chauffé minimisant la condensation interne, valve APL à dégagement rapide réduisant la pression des voies respiratoires tout en maintenant la limite définie, sortie HL7 pour la connectivité AIMS et EMR, table gigogne et éclairage LED réglable, sortie de gaz commune auxiliaire (ACGO) pour une utilisation avec des circuits sans réinhalation, compatible avec les moniteurs du patient de Mindray."
+      "description":"./WATO EX-35_Brochure.pdf"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "image": "./images/products/Mindray WATO EX-6555.jpeg",
       "price": 14.95,
       "category": "Mindray WATO EX-65/55",
-      "description": "Le WATO EX-65/55 offre une gamme complète de modes de ventilation contrôlés et assistés, y compris PCV-VG, SIMV-VG, et bien d'autres ; avec un nouveau logiciel de calcul d'agent anesthésique, une interface utilisateur intuitive, un module multi-gaz pour une analyse complète respiration par respiration, un écran tactile couleur de 12 pouces, et des caractéristiques standards telles qu'une technologie avancée de monitorage patient, une conception compacte, un système respiratoire chauffant, et un débitmètre de gaz électronique."
+      "description": "./WATO EX-65 Pro_Brochure.pdf"
     }
   ]
 }

@@ -9,13 +9,26 @@ export default function Reclamation() {
   const [reclamation, setReclamation] = useState([]);
   const [idResponsable, setIdResponsable] = useState("");
   const [symptomes, setSymptomes] = useState("");
+  const [numereReclamation, setNumereReclamation] = useState(0);
   const [date, setDate] = useState("");
-  const [gravite, setGravite] = useState("");
+  // const [gravite, setGravite] = useState("");
   const [pieceJointe, setPieceJointe] = useState("");
   const [impact, setImpact] = useState("");
+  const [modele, setModele] = useState("");
+  const [numeroSerie, setNumeroSerie] = useState(0);
+  const [etatGarantie, setEtatGarantie] = useState("");
+  const [messageError, setMessageError] = useState("");
 
   const hundleSubmit = () => {
-    if(!idResponsable || !symptomes || !date || !gravite) {
+    if (
+      !idResponsable ||
+      !symptomes ||
+      !date ||
+      // !gravite ||
+      !numereReclamation ||
+      !modele ||
+      !numeroSerie
+    ) {
       alert("Please fill all the fields");
       return;
     }
@@ -23,31 +36,45 @@ export default function Reclamation() {
     const newReclamation = {
       idResponsable,
       symptomes,
+      numereReclamation,
       date,
-      gravite,
+      // gravite,
       pieceJointe,
-      impact
-    }
+      modele,
+      impact,
+      numeroSerie,
+      etatGarantie,
+      messageError,
+    };
     setReclamation([...reclamation, newReclamation]);
     setIdResponsable("");
     setSymptomes("");
+    setNumereReclamation(0);
     setDate("");
-    setGravite("");
+    // setGravite("");
     setPieceJointe("");
     setImpact("");
+    setNumeroSerie(0);
+    setModele("");
+    setEtatGarantie("");
+    setMessageError("");
     newReclamation.idResponsable = "";
     newReclamation.symptomes = "";
     newReclamation.date = "";
-    newReclamation.gravite = "";
+    // newReclamation.gravite = "";
     newReclamation.pieceJointe = "";
     newReclamation.impact = "";
+    newReclamation.numereReclamation = 0;
+    newReclamation.modele = "";
+    newReclamation.numeroSerie = 0;
+    newReclamation.etatGarantie = "";
+    newReclamation.messageError = "";
     console.log(reclamation);
-
   };
 
   return (
     <div className="form">
-      <label htmlFor="exampleFormControlTextarea1" className="form-label" >
+      <label htmlFor="exampleFormControlTextarea1" className="form-label">
         ID responsable
       </label>
       <MDBInput
@@ -79,6 +106,45 @@ export default function Reclamation() {
         <option>Problèmes de contrôle de pression</option>
       </select>
       <br />
+      <div className="form-floating">
+        <textarea
+          className="form-control"
+          placeholder="Impact sur le patient/Actions entreprises (optionnel)"
+          id="floatingTextarea"
+          value={messageError}
+          onChange={(e) => setMessageError(e.target.value)}
+        ></textarea>
+        <label htmlFor="floatingTextarea">Message d'erreur (optionnel)</label>
+      </div>
+      <br />
+      <label htmlFor="basic-url" className="form-label">
+        Numéro de réclamation
+      </label>
+      <div className="input-group mb-3">
+        <input
+          type="number"
+          className="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+          value={numereReclamation}
+          onChange={(e) => setNumereReclamation(e.target.value)}
+          required
+        />
+      </div>
+      <label htmlFor="basic-url" className="form-label">
+        Modele
+      </label>
+      <div className="input-group mb-3">
+        <input
+          type="text"
+          className="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+          value={modele}
+          onChange={(e) => setModele(e.target.value)}
+          required
+        />
+      </div>
       <label htmlFor="basic-url" className="form-label">
         Your vanity URL
       </label>
@@ -93,16 +159,52 @@ export default function Reclamation() {
           required
         />
       </div>
-      <label htmlFor="exampleFormControlTextarea1" className="form-label">
+      <label htmlFor="basic-url" className="form-label">
+        Numéro de série S/N
+      </label>
+      <div className="input-group mb-3">
+        <input
+          type="number"
+          className="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+          value={numeroSerie}
+          onChange={(e) => setNumeroSerie(e.target.value)}
+          required
+        />
+      </div>
+      {/* <label htmlFor="exampleFormControlTextarea1" className="form-label">
         Niveau gravites
       </label>
-      <select className="form-select" aria-label="Niveau gravites" required value={gravite} onChange={(e)=>setGravite(e.target.value)}>
+      <select
+        className="form-select"
+        aria-label="Niveau gravites"
+        required
+        value={gravite}
+        onChange={(e) => setGravite(e.target.value)}
+      >
         <option value="1">Mineur</option>
         <option value="2">Modéré</option>
         <option value="4">Majeur</option>
         <option value="3">Critique</option>
+      </select> */}
+      <br />
+      <label htmlFor="exampleFormControlTextarea1" className="form-label">
+        Etat de garantie
+      </label>
+      <select
+        className="form-select"
+        aria-label="Niveau gravites"
+        required
+        value={etatGarantie}
+        onChange={(e) => setEtatGarantie(e.target.value)}
+      >
+        <option value="1">En cours de garantie</option>
+        <option value="2">Garantie expirée </option>
+        <option value="4">Non applicable</option>
       </select>
       <br />
+
       <label htmlFor="basic-url" className="form-label">
         piece jointe (optionnel)
       </label>
@@ -115,19 +217,20 @@ export default function Reclamation() {
           value={pieceJointe}
           onChange={(e) => setPieceJointe(e.target.value)}
           required
-
         />
       </div>
+
+      <br />
       <div className="form-floating">
         <textarea
           className="form-control"
-          placeholder="Impact sur le patient/Actions entreprises (optionnel)"
+          placeholder="Actions entreprises (optionnel)"
           id="floatingTextarea"
           value={impact}
           onChange={(e) => setImpact(e.target.value)}
         ></textarea>
         <label htmlFor="floatingTextarea">
-          Impact sur le patient/Actions entreprises (optionnel)
+          Actions entreprises (optionnel)
         </label>
       </div>
       <br />
