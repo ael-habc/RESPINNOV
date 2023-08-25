@@ -74,6 +74,20 @@ export default function Reclamation() {
 
   return (
     <div className="form">
+        <label htmlFor="basic-url" className="form-label">
+        Numéro de réclamation
+      </label>
+      <div className="input-group mb-3">
+        <input
+          type="number"
+          className="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+          value={numereReclamation}
+          onChange={(e) => setNumereReclamation(e.target.value)}
+          required
+        />
+      </div>
       <label htmlFor="exampleFormControlTextarea1" className="form-label">
         ID responsable
       </label>
@@ -117,20 +131,7 @@ export default function Reclamation() {
         <label htmlFor="floatingTextarea">Message d'erreur (optionnel)</label>
       </div>
       <br />
-      <label htmlFor="basic-url" className="form-label">
-        Numéro de réclamation
-      </label>
-      <div className="input-group mb-3">
-        <input
-          type="number"
-          className="form-control"
-          id="basic-url"
-          aria-describedby="basic-addon3"
-          value={numereReclamation}
-          onChange={(e) => setNumereReclamation(e.target.value)}
-          required
-        />
-      </div>
+    
       <label htmlFor="basic-url" className="form-label">
         Modele
       </label>
@@ -142,20 +143,6 @@ export default function Reclamation() {
           aria-describedby="basic-addon3"
           value={modele}
           onChange={(e) => setModele(e.target.value)}
-          required
-        />
-      </div>
-      <label htmlFor="basic-url" className="form-label">
-        Your vanity URL
-      </label>
-      <div className="input-group mb-3">
-        <input
-          type="date"
-          className="form-control"
-          id="basic-url"
-          aria-describedby="basic-addon3"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
           required
         />
       </div>
@@ -173,6 +160,21 @@ export default function Reclamation() {
           required
         />
       </div>
+      <label htmlFor="basic-url" className="form-label">
+        Date
+      </label>
+      <div className="input-group mb-3">
+        <input
+          type="date"
+          className="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          required
+        />
+      </div>
+      
       {/* <label htmlFor="exampleFormControlTextarea1" className="form-label">
         Niveau gravites
       </label>
@@ -206,7 +208,7 @@ export default function Reclamation() {
       <br />
 
       <label htmlFor="basic-url" className="form-label">
-        piece jointe (optionnel)
+        Piece jointe (optionnel)
       </label>
       <div className="input-group mb-3">
         <input

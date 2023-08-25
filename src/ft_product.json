@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "A5 Advantage",
+      "name": "A9_Brochure",
       "image": "./images/products/A5 Advantage.jpeg",
       "price": 19.99,
       "category":  "A5 Advantage",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "name": "A7 Advantage",
+      "name": "WATO EX-35_Brochure",
       "image": "./images/products/A7 Advantage.jpeg",
       "price": 29.99,
       "category": "A7 Advantage",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "name": "Mindray WATO EX-65/55",
+      "name": "WATO EX-65 Pro_Brochure",
       "image": "./images/products/Mindray WATO EX-6555.jpeg",
       "price": 14.95,
       "category": "Mindray WATO EX-65/55",

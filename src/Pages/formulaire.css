@@ -1,0 +1,9 @@
+#formulaire {
+    padding: 50px;
+}
+#formulaire p{
+    font-weight: bolder;
+}
+.form-check{
+    margin-left: 40px;
+}

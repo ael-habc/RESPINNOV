@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import Cart from "./Cart";
 import Products from "./Pages/Product";
 import Reclamation from "./Pages/Reclamation";
+import Formulaire from "./Pages/Formulaire";
 
 export const CartContext = createContext();
 
@@ -25,7 +26,9 @@ function App() {
             <NavLink to="/about">About</NavLink>
             <NavLink to="/product">pieces de rechange</NavLink>
             <NavLink to="/reclamation">Reclamation</NavLink>
+            <NavLink to="/formulaire">Formulaire</NavLink>
             <NavLink to="/cart">cart</NavLink>
+
           </div>
         </div>
         <Routes>
@@ -34,6 +37,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/reclamation" element={<Reclamation />} />
+          <Route path="/formulaire" element={<Formulaire />} />
         </Routes>
         
       </BrowserRouter>

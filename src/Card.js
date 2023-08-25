@@ -26,7 +26,7 @@ function BasicExample({ product }) {
       <Card.Img variant="top" src={require(`${image}`)} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
-        <Card.Text>{price}</Card.Text>
+        {/* <Card.Text>{price}</Card.Text> */}
 
         <a
           href={require(`${description}`)}
