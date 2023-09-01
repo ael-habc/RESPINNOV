@@ -59,6 +59,7 @@ hr {
   flex-direction: column;
   margin-top: 80px;
   align-items: center;
+  text-align: center;
   gap: 20px;
   width: 100%;
 }

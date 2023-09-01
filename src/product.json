@@ -2,17 +2,17 @@
     "products": [
       {
         "id": 1,
-        "name": "Product 1",
+        "name": "Dôme de clapet anti-retour",
         "image": "./images/products/A5 Advantage.jpeg",
         "price": 19.99,
-        "category":  "A5 Advantage"
+        "category":  "WATO EX-35"
       },
       {
         "id": 2,
-        "name": "Product 2",
+        "name": "Dôme de clapet anti-retour",
         "image": "./images/products/A7 Advantage.jpeg",
         "price": 29.99,
-        "category": "A7 Advantage"
+        "category": "WATO EX-35"
       },
       {
         "id": 3,

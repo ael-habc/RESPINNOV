@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -20,8 +20,6 @@ export default function Caroussel() {
       <Swiper
        effect='slide'
        slidesPerView={1} 
-       //since the slides array length is 6,
-       //slidesPerView should be less than or equal to 3
        loop={true}
        autoplay={{
            "delay": 2300,

@@ -1,5 +1,6 @@
 import React from "react";
-import { MDBRadio } from "mdb-react-ui-kit";
+import { MDBRadio, MDBTextArea } from "mdb-react-ui-kit";
+import Button from '@mui/material/Button';
 import "./formulaire.css";
 
 export default function Formulaire() {
@@ -129,6 +130,39 @@ export default function Formulaire() {
       <MDBRadio name="satisfaction" id="radiox" label="Neutre" />
       <MDBRadio name="satisfaction" id="radiox" label="Satisfait" />
       <MDBRadio name="satisfaction" id="radiox" label="Très satisfait" />
+
+      <hr />
+      <p>
+        Quels sont les points forts du respirateur d&#39;anesthésie de Mindray,
+        selon votre expérience ?
+      </p>
+      <MDBTextArea id="textAreaExample" rows={4} />
+      <hr />
+      <p>
+        Y a-t-il des fonctionnalités ou des améliorations spécifiques que vous
+        aimeriez voir ajoutées ou développées dans le respirateur
+        d&#39;anesthésie ?
+      </p>
+      <MDBTextArea id="textAreaExample" rows={4} />
+      <hr />
+      <p>
+        Décrivez votre expérience concernant la fiabilité et la stabilité du
+        respirateur d&#39;anesthésie de Mindray dans des situations cliniques
+        variées.
+      </p>
+      <MDBTextArea id="textAreaExample" rows={4} />
+      <hr />
+      <p>
+        Si vous avez utilisé d&#39;autres respirateurs d&#39;anesthésie par le
+        passé, veuillez comparer votre expérience avec le respirateur de Mindray
+        en termes de performances et de convivialité.
+      </p>
+      <MDBTextArea id="textAreaExample" rows={4} />
+
+      <hr />
+      <Button id="btnx" variant="contained" color="success">
+        Envoyer
+      </Button>
     </div>
   );
 }

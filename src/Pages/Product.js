@@ -5,7 +5,6 @@ import "./Product.css";
 import { Button, ButtonGroup, Radio } from 'bootstrap-4-react';
 
 export default function Products() {
-  console.log(data.pieces);
   const [products, setProducts] = useState(data.pieces);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,9 +26,9 @@ export default function Products() {
           <Radio autoComplete="off" />
           All Product
         </Button>
-        <Button secondary as="label"  onClick={() => fillterData(data, "Filtres")}>
+        <Button secondary as="label"  onClick={() => fillterData(data, "WATO EX-35")}>
           <Radio autoComplete="off" />
-          Filtres        </Button>
+          WATO EX-35      </Button>
         <Button secondary as="label" onClick={()=> fillterData(data,"Tubulures et tuyaux")} >
           <Radio autoComplete="off" />
           Tubulures et tuyaux
@@ -46,7 +45,6 @@ export default function Products() {
           <Radio autoComplete="off" />
           Batteries
         </Button>
-        
       </ButtonGroup>
         
       </div>

@@ -1,27 +1,23 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Product from "../Card";
 import productList from "../ft_product.json";
 import "./Home.css";
 import logo from "../images/logo.svg";
 import Caroussel from "../Caroussel";
+import Cookies from "js-cookie";
+
 
 export default function Home() {
+  const history = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    if (!Cookies.get("login")) {
+      history("/login");
+  }}, []);
   return (
     <div className="container">
       <Caroussel/>
-      {/* <div className="header"> */}
-        {/* <h1 className="header_title">RESPINNOV</h1>
-        {/* <p className="header_text">Description of Respinnov</p> */}
-        {/* <NavLink to="/Product" className="header_button"> */}
-          {/* <button type="submit" className="cart" id="header_button"> */}
-            {/* EXPLORE */}
-          {/* </button> */}
-        {/* </NavLink>  */}
-      {/* </div> */}
 
       <div className="content">
         <h1>RESPINNOV</h1>
