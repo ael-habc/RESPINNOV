@@ -30,7 +30,6 @@ function App() {
     window.scrollTo(0, 0);
     const hideNavbarRoutes = ["/login"]; // Add the paths of routes where you want to hide the navbar
     setShowNavbar(!hideNavbarRoutes.includes(location));
-    console.log("fdsjjksfdhnjksndfkj");
   }, [location]);
   function hundleLogout() {
     Cookies.remove("login");
@@ -41,7 +40,7 @@ function App() {
 
     <CartContext.Provider value={{ login, setLogin }}>
       <BrowserRouter>
-        {showNavbar && (
+        {showNavbar && !Cookies.get(Login) && (
           <div className="Nav">
             <NavLink to="/" className="logo">
               <img src={logo} alt="logo" />
@@ -51,7 +50,7 @@ function App() {
               <NavLink to="/product">pieces de rechange</NavLink>
               <NavLink to="/reclamation">Reclamation</NavLink>
               <NavLink to="/formulaire">Formulaire</NavLink>
-              <button type="button" className="btn btn-primary" onClick={hundleLogout}>
+              <button type="button" className="btn btn-danger" onClick={hundleLogout}>
                 logout
               </button>
             </div>
