@@ -3,171 +3,122 @@
       {
         "id": 1,
         "name": "Dôme de clapet anti-retour",
-        "image": "./images/products/A5 Advantage.jpeg",
+        "image": "./images/Catalogue_des_pièces_de_rechange/0.jpg",
         "price": 19.99,
         "category":  "WATO EX-35"
       },
       {
         "id": 2,
-        "name": "Dôme de clapet anti-retour",
-        "image": "./images/products/A7 Advantage.jpeg",
+        "name": "Dôme à soufflet",
+        "image": "./imagesCatalogue_des_pièces_de_rechange/1.jpg",
         "price": 29.99,
         "category": "WATO EX-35"
       },
       {
         "id": 3,
-        "name": "Product 3",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
+        "name": "Manomètre des voies respiratoires",
+        "image": "./images/Catalogue_des_pièces_de_rechange/2.jpg",
         "price": 14.95,
-        "category": "Mindray WATO EX-65/55"
+        "category": "WATO EX-35"
+      },
+      {
+        "id": 4,
+        "name": " Assemblage de Valve APL",
+        "image": "./images/Catalogue_des_pièces_de_rechange/3.jpg",
+        "price": 24.99,
+        "category":  "WATO EX-35"
+      },
+      {
+        "id": 5,
+        "name": "Capteur d’O2",
+        "image": "./images/Catalogue_des_pièces_de_rechange/4.jpg",
+        "price": 17.50,
+        "category": "WATO EX-35"
       },
       {
         "id": 6,
-        "name": "Product 6",
-        "image": "./images/products/A5 Advantage.jpeg",
-        "price": 24.99,
-        "category":  "A5 Advantage"
+        "name": "Bouton de chasse (Flush) d’O2",
+        "image": "./images/Catalogue_des_pièces_de_rechange/5.jpg",
+        "price": 12.95,
+        "category": "WATO EX-35"
       },
       {
-        "id": 7,
-        "name": "Product 7",
-        "image": "./images/products/A7 Advantage.jpeg",
-        "price": 17.50,
-        "category": "A7 Advantage"
+        "id": 7 ,
+        "name": "Assemblage de contrôle d’aspiration",
+        "image": "./images/Catalogue_des_pièces_de_rechange/6.jpg",
+        "price": 15.99,
+        "category":  "WATO EX-65 Pro"
       },
       {
         "id": 8,
-        "name": "Product 8",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
-        "price": 12.95,
-        "category": "Mindray WATO EX-65/55"
+        "name": "Kit LCD",
+        "image": "./images/Catalogue_des_pièces_de_rechange/7.jpg",
+        "price": 34.99,
+        "category": "WATO EX-65 Pro"
+      },
+      {
+        "id": 9,
+        "name": "PAssemblage de bras de sac (BAG Arm)",
+        "image": "./images/Catalogue_des_pièces_de_rechange/8.jpg",
+        "price": 11.95,
+        "category": "WATO EX-65 Pro"
+      },
+      {
+        "id": 10,
+        "name": "Assemblage pré-emballé",
+        "image": "./images/Catalogue_des_pièces_de_rechange/9.jpg",
+        "price": 19.99,
+        "category":  "WATO EX-65 Pro"
       },
       {
         "id": 11,
-        "name": "Product 11",
-        "image": "./images/products/A5 Advantage.jpeg",
-        "price": 15.99,
-        "category":  "A5 Advantage"
+        "name": "Assemblage de clapet anti-retour",
+        "image": "./images/Catalogue_des_pièces_de_rechange/10.jpg",
+        "price": 39.99,
+        "category": "WATO EX-65 Pro"
       },
       {
         "id": 12,
-        "name": "Product 12",
-        "image": "./images/products/A7 Advantage.jpeg",
-        "price": 34.99,
-        "category": "A7 Advantage"
+        "name": "Module de câble de capteur d’O2",
+        "image": "./images/Catalogue_des_pièces_de_rechange/11.jpg",
+        "price": 14.95,
+        "category": "A9"
       },
       {
         "id": 13,
-        "name": "Product 13",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
-        "price": 11.95,
-        "category": "Mindray WATO EX-65/55"
-      },
-      {
-        "id": 16,
-        "name": "Product 16",
-        "image": "./images/products/A5 Advantage.jpeg",
-        "price": 19.99,
-        "category":  "A5 Advantage"
-      },
-      {
-        "id": 17,
-        "name": "Product 17",
-        "image": "./images/products/A7 Advantage.jpeg",
-        "price": 39.99,
-        "category": "A7 Advantage"
-      },
-      {
-        "id": 18,
-        "name": "Product 18",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
-        "price": 14.95,
-        "category": "Mindray WATO EX-65/55"
-      },
-      {
-        "id": 21,
-        "name": "Product 21",
-        "image": "./images/products/A5 Advantage.jpeg",
+        "name": "Débitmètre d’oxygène de secours",
+        "image": "./images/Catalogue_des_pièces_de_rechange/12.jpg",
         "price": 24.99,
-        "category":  "A5 Advantage"
+        "category":  "A9"
       },
       {
-        "id": 22,
-        "name": "Product 22",
-        "image": "./images/products/A7 Advantage.jpeg",
+        "id": 14,
+        "name": "Capteur de débit",
+        "image": "./images/Catalogue_des_pièces_de_rechange/13.jpg",
         "price": 17.50,
-        "category": "A7 Advantage"
+        "category": "A9"
       },
       {
-        "id": 23,
-        "name": "Product 23",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
+        "id": 15,
+        "name": "Capteur d’O2",
+        "image": "./images/Catalogue_des_pièces_de_rechange/14.jpg",
         "price": 12.95,
-        "category": "Mindray WATO EX-65/55"
+        "category": "A9"
       },
 
       {
-        "id": 26,
-        "name": "Product 26",
-        "image": "./images/products/A5 Advantage.jpeg",
+        "id": 16,
+        "name": "ByPass CO2",
+        "image": "./images/Catalogue_des_pièces_de_rechange/15.jpg",
         "price": 15.99,
-        "category":  "A5 Advantage"
+        "category":  "A9"
       },
       {
-        "id": 27,
-        "name": "Product 27",
-        "image": "./images/products/A7 Advantage.jpeg",
+        "id": 17,
+        "name": "Echangeur de volume",
+        "image": "./images/Catalogue_des_pièces_de_rechange/16.jpg",
         "price": 34.99,
-        "category": "A7 Advantage"
-      },
-      {
-        "id": 28,
-        "name": "Product 28",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
-        "price": 11.95,
-        "category": "Mindray WATO EX-65/55"
-      },
-      {
-        "id": 31,
-        "name": "Product 31",
-        "image": "./images/products/A5 Advantage.jpeg",
-        "price": 19.99,
-        "category":  "A5 Advantage"
-      },
-      {
-        "id": 32,
-        "name": "Product 32",
-        "image": "./images/products/A7 Advantage.jpeg",
-        "price": 39.99,
-        "category": "A7 Advantage"
-      },
-      {
-        "id": 33,
-        "name": "Product 33",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
-        "price": 14.95,
-        "category": "Mindray WATO EX-65/55"
-      },
-      {
-        "id": 36,
-        "name": "Product 36",
-        "image": "./images/products/A5 Advantage.jpeg",
-        "price": 15.99,
-        "category":  "A5 Advantage"
-      },
-      {
-        "id": 37,
-        "name": "Product 37",
-        "image": "./images/products/A7 Advantage.jpeg",
-        "price": 34.99,
-        "category": "A7 Advantage"
-      },
-      {
-        "id": 38,
-        "name": "Product 38",
-        "image": "./images/products/Mindray WATO EX-6555.jpeg",
-        "price": 11.95,
-        "category": "Mindray WATO EX-65/55"
+        "category": "A9"
       }
     ]
   }

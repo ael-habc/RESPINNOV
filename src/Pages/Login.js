@@ -1,6 +1,5 @@
-import React, {useState} from "react";
-import { NavLink, useHistory, useLocation, useNavigate } from "react-router-dom";
-import Cookies from 'js-cookie';
+import React, { useState } from "react";
+import Cookies from "js-cookie";
 import {
   MDBBtn,
   MDBContainer,
@@ -13,33 +12,40 @@ import {
 import logo from "../images/logo.svg";
 import "./Login.css";
 import { useEffect } from "react";
+
 function App() {
-  useEffect(()=>{
+
+  useEffect(() => {
     if (Cookies.get("login")) {
       window.location.href = "/";
     }
-  },[])
+  }, []);
+
   const medcin = {
     nom: "medcin",
     password: "medcin",
-  }
+  };
+
   const bio = {
     nom: "bio",
     password: "bio",
-  }
-  const [nom , setNom] = useState("");
-  const [password , setPassword] = useState("");
+  };
+
+  const [nom, setNom] = useState("");
+  const [password, setPassword] = useState("");
+  
   const hundleLogin = () => {
     if (nom === medcin.nom && password === medcin.password) {
-      Cookies.set('login', 'medcin');
+      Cookies.set("login", "medcin");
       window.location.href = "/";
     } else if (nom === bio.nom && password === bio.password) {
-      Cookies.set('login', 'bio');
+      Cookies.set("login", "bio");
       window.location.href = "/";
     } else {
       alert("nom ou mot de passe incorrect");
     }
-  }
+  };
+  
   return (
     <MDBContainer fluid className="p-4">
       <MDBRow>
@@ -47,12 +53,15 @@ function App() {
           md="6"
           className="text-center text-md-start d-flex flex-column justify-content-center"
         >
-            <img src={logo} alt="logo" id="logoLogin" />
-          <h1 className="my-5 display-3 fw-bold ls-tight px-3">
-            RESPINNOV
-          </h1>
+          <img src={logo} alt="logo" id="logoLogin" />
 
-          <p className="px-3" style={{ color: "hsl(217, 10%, 60%)"}} id="titleLogin">
+          <h1 className="my-5 display-3 fw-bold ls-tight px-3">RESPINNOV</h1>
+
+          <p
+            className="px-3"
+            style={{ color: "hsl(217, 10%, 60%)" }}
+            id="titleLogin"
+          >
             Un souffle d'excellence technologique pour une éxperience de
             respirateur d'anesthésie repensée
           </p>
@@ -61,7 +70,6 @@ function App() {
         <MDBCol md="6">
           <MDBCard className="my-5">
             <MDBCardBody className="p-5">
-
               <MDBInput
                 wrapperClass="mb-4"
                 label="Login"
@@ -79,10 +87,13 @@ function App() {
                 onChange={(e) => setPassword(e.target.value)}
               />
 
-              <MDBBtn className="w-100 mb-4" size="md" onClick={hundleLogin}>
-                 login
-              </MDBBtn>
-
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={hundleLogin}
+              >
+                Log in
+              </button>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
