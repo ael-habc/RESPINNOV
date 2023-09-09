@@ -1,18 +1,19 @@
-.login {
-    
-    width: 70%;
-    aspect-ratio: 2/1;
-    margin:0 auto;
+#loginMain {
+    margin-top: 100px;
 }
-#logoLogin {
-    display: inline-block;
+#logoLogin,#logoLogin2 {
+    display: inline;
     width: 200px;
-    margin:0 auto;
+    margin:-20px auto;
 }
 #titleLogin {
+    margin: -20px auto;
     font-size: 1rem;
     font-weight: bold;
 }
 .content {
     text-align: center;
+}
+#loginForm {
+    padding-right: 40px;
 }

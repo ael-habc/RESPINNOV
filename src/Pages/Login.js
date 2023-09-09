@@ -10,6 +10,7 @@ import {
   MDBInput,
 } from "mdb-react-ui-kit";
 import logo from "../images/logo.svg";
+import logo2 from "../images/Mindray_s_logo.png";
 import "./Login.css";
 import { useEffect } from "react";
 
@@ -47,15 +48,16 @@ function App() {
   };
   
   return (
-    <MDBContainer fluid className="p-4">
+    <MDBContainer fluid className="p-4" id="loginMain">
       <MDBRow>
         <MDBCol
           md="6"
           className="text-center text-md-start d-flex flex-column justify-content-center"
         >
           <img src={logo} alt="logo" id="logoLogin" />
+          <img src={logo2} alt="logo2" id="logoLogin2" />
 
-          <h1 className="my-5 display-3 fw-bold ls-tight px-3">RESPINNOV</h1>
+          {/* <h1 className="my-5 display-3 fw-bold ls-tight px-3">RESPINNOV</h1>
 
           <p
             className="px-3"
@@ -64,10 +66,10 @@ function App() {
           >
             Un souffle d'excellence technologique pour une éxperience de
             respirateur d'anesthésie repensée
-          </p>
+          </p> */}
         </MDBCol>
 
-        <MDBCol md="6">
+        <MDBCol md="6" id="loginForm">
           <MDBCard className="my-5">
             <MDBCardBody className="p-5">
               <MDBInput

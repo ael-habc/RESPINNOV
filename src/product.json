@@ -4,13 +4,12 @@
         "id": 1,
         "name": "Dôme de clapet anti-retour",
         "image": "./images/Catalogue_des_pièces_de_rechange/0.jpg",
-        "price": 19.99,
         "category":  "WATO EX-35"
       },
       {
         "id": 2,
         "name": "Dôme à soufflet",
-        "image": "./imagesCatalogue_des_pièces_de_rechange/1.jpg",
+        "image": "./images/Catalogue_des_pièces_de_rechange/1.jpg",
         "price": 29.99,
         "category": "WATO EX-35"
       },
