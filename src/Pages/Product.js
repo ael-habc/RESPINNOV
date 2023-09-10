@@ -36,7 +36,7 @@ export default function Products() {
       return;
     }
     else {
-      toast.success("Votre réclamation a été saisie avec succès ");
+      toast.success("Votre commande a été saisie avec succès");
     }
   };
 

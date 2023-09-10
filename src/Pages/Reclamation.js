@@ -19,6 +19,7 @@ export default function Reclamation() {
   const [numeroSerie, setNumeroSerie] = useState(0);
   const [etatGarantie, setEtatGarantie] = useState("");
   const [messageError, setMessageError] = useState("");
+  const [symptomesAutre, setSymptomesAutre] = useState("");
 
   const hundleSubmit = () => {
     if (
@@ -120,7 +121,22 @@ export default function Reclamation() {
         <option>Problèmes de réglage des paramètres</option>
         <option>Problèmes de ventilation</option>
         <option>Problèmes de contrôle de pression</option>
+        <option>Autre</option>
       </select>
+      <br />
+      {symptomes === "Autre" ? (
+        <div className="form-floating">
+          <textarea
+            className="form-control"
+            placeholder="Symptomes Observes"
+            id="floatingTextarea"
+            value={symptomesAutre}
+            onChange={(e) => setSymptomesAutre(e.target.value)}
+          ></textarea>
+          <label htmlFor="floatingTextarea">Symptomes Observes</label>
+        </div>
+      ) : null  
+      }
       <br />
       <div className="form-floating">
         <textarea

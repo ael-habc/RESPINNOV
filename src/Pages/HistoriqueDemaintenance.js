@@ -115,10 +115,12 @@ export default function HistoriqueDemaintenance() {
   function Delete(id) {
     const newList = Historique.filter((item) => item.id !== id);
     setHistorique(newList);
+    toast.success("Votre maintenance a été supprimée avec succès");
   }
   function Delete2(id) {
     const newList = Historique2.filter((item) => item.id !== id);
     setHistorique2(newList);
+    toast.success("Votre maintenance a été supprimée avec succès");
   }
   return (
     <div className="historique">
@@ -272,6 +274,7 @@ function Example(props) {
     setHistorique2([]);
     //rerender the page
     handleClose();
+    toast.success("Votre maintenance a été saisie avec succès");
   }
 
   return (
@@ -417,6 +420,7 @@ function Example2(props) {
       set([...historique, ...historique2]);
       setHistorique2([]);
       //rerender the page
+      toast.success("Votre maintenance a été saisie avec succès");
       handleClose();
     }
   
