@@ -21,10 +21,10 @@ export default function Home() {
 
       <div className="content">
         <h1>RESPINNOV</h1>
-        <p>
+        <h3>
           Un souffle d'excellence technologique pour une éxperience de
           respirateur d'anesthésie repensée
-        </p>
+        </h3>
       </div>
       <hr />
       <div className="main">

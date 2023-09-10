@@ -2,10 +2,15 @@ import React from "react";
 import { MDBRadio, MDBTextArea } from "mdb-react-ui-kit";
 import Button from '@mui/material/Button';
 import "./formulaire.css";
+import { Toaster ,toast} from "react-hot-toast";
 
 export default function Formulaire() {
+  function submit() {
+    toast.success('merci de bien vouloir remplir le formulaire' )
+  }
   return (
     <div id="formulaire">
+      <Toaster/>
       <p>Quelle est votre spécialité médicale ?</p>
       <MDBRadio name="specialite" id="radiox" label="Médecin anesthésiste" />
       <MDBRadio name="specialite" id="radiox" label="Médecin réanimateur" />
@@ -160,9 +165,10 @@ export default function Formulaire() {
       <MDBTextArea id="textAreaExample" rows={4} />
 
       <hr />
-      <Button id="btnx" variant="contained" color="success">
+      <Button id="btnx" variant="contained" color="success"  onClick={submit}>
         Envoyer
       </Button>
+      <Toaster/>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Cookies from "js-cookie";
 import {
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
@@ -23,12 +22,12 @@ function App() {
   }, []);
 
   const medcin = {
-    nom: "Alami.Omar",
+    nom: "AOmar-23",
     password: "medcin",
   };
 
   const bio = {
-    nom: "Youssfi.Wafae",
+    nom: "WYoussfi-95",
     password: "bio",
   };
 

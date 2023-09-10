@@ -3,6 +3,7 @@ import data from "../product.json";
 import Product from "../Card2";
 import "./Product.css";
 import { Button, ButtonGroup, Radio } from "bootstrap-4-react";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function Products() {
   const [products, setProducts] = useState(data.products);
@@ -34,6 +35,9 @@ export default function Products() {
       alert("Please fill all the fields");
       return;
     }
+    else {
+      toast.success("Votre réclamation a été saisie avec succès ");
+    }
   };
 
   const fillterData = (data, category) => {
@@ -46,6 +50,7 @@ export default function Products() {
   };
   return (
     <div className="pageProduct">
+      <Toaster/>
       <ButtonGroup toggle>
         <Button primary active as="label" onClick={() => setToggle(true)}>
           <Radio autoComplete="off" />
@@ -53,7 +58,7 @@ export default function Products() {
         </Button>
         <Button secondary as="label" onClick={() => setToggle(false)}>
           <Radio autoComplete="off" />
-          Demande des Pieces de rechange
+          Commande des Pieces de rechange
         </Button>
       </ButtonGroup>
       {toggle ? (
@@ -104,7 +109,7 @@ export default function Products() {
       ) : (
         <div className="formDemande">
           <label htmlFor="basic-url" className="form-label">
-            Num de demande :
+            Num de commande:
           </label>
           <div className="input-group mb-3">
             <input
@@ -122,7 +127,7 @@ export default function Products() {
           </label>
           <div className="input-group mb-3">
             <input
-              type="number"
+              type="text"
               className="form-control"
               id="basic-url"
               aria-describedby="basic-addon3"

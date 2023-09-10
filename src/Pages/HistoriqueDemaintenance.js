@@ -4,6 +4,8 @@ import Table from "react-bootstrap/Table";
 import { Button } from "bootstrap-4-react/lib/components";
 import Modal from "react-bootstrap/Modal";
 import { ButtonGroup, Radio } from "bootstrap-4-react";
+import { Toaster, toast } from "react-hot-toast";
+
 
 export default function HistoriqueDemaintenance() {
   const [Historique, setHistorique] = useState([
@@ -120,6 +122,7 @@ export default function HistoriqueDemaintenance() {
   }
   return (
     <div className="historique">
+      <Toaster/>
       <ButtonGroup toggle className="g">
         <Button primary active as="label" onClick={() => setToggle(true)}>
           <Radio autoComplete="off" />

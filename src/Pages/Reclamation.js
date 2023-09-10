@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { MDBInput } from "mdb-react-ui-kit";
 import "./Reclamation.css";
-
+import { Toaster, toast } from "react-hot-toast";
 
 export default function Reclamation() {
   const [reclamation, setReclamation] = useState([]);
@@ -25,7 +25,6 @@ export default function Reclamation() {
       !idResponsable ||
       !symptomes ||
       !date ||
-      // !gravite ||
       !numereReclamation ||
       !modele ||
       !numeroSerie
@@ -33,6 +32,7 @@ export default function Reclamation() {
       alert("Please fill all the fields");
       return;
     }
+    toast.success("Votre réclamation a été saisie avec succès");
 
     const newReclamation = {
       idResponsable,
@@ -75,7 +75,8 @@ export default function Reclamation() {
 
   return (
     <div className="form">
-        <label htmlFor="basic-url" className="form-label">
+      <Toaster />
+      <label htmlFor="basic-url" className="form-label">
         Numéro de réclamation
       </label>
       <div className="input-group mb-3">
@@ -132,7 +133,6 @@ export default function Reclamation() {
         <label htmlFor="floatingTextarea">Message d'erreur (optionnel)</label>
       </div>
       <br />
-    
       <label htmlFor="basic-url" className="form-label">
         Modele
       </label>
@@ -175,8 +175,6 @@ export default function Reclamation() {
           required
         />
       </div>
-      
-    
       <br />
       <label htmlFor="exampleFormControlTextarea1" className="form-label">
         Etat de garantie
@@ -193,7 +191,6 @@ export default function Reclamation() {
         <option value="4">Non applicable</option>
       </select>
       <br />
-
       <label htmlFor="basic-url" className="form-label">
         Piece jointe (optionnel)
       </label>
@@ -208,7 +205,6 @@ export default function Reclamation() {
           required
         />
       </div>
-
       <br />
       <div className="form-floating">
         <textarea
