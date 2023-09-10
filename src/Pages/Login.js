@@ -23,12 +23,12 @@ function App() {
   }, []);
 
   const medcin = {
-    nom: "medcin",
+    nom: "Alami.Omar",
     password: "medcin",
   };
 
   const bio = {
-    nom: "bio",
+    nom: "Youssfi.Wafae",
     password: "bio",
   };
 

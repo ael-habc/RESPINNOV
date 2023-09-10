@@ -39,17 +39,20 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 1.3rem;
-    width: 80%;
+    width: 90%;
 }
 .content {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 50px;
+  font-weight: 700;
 }
 .content h1 {
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 70px;
+  font-weight:bolder;
+  color: black;
+  
 }
 
 .swiper {
@@ -72,3 +75,10 @@ img {
   object-fit: cover;
 }
 
+p {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+}

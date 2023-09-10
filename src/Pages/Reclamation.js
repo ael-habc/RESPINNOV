@@ -5,6 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import { MDBInput } from "mdb-react-ui-kit";
 import "./Reclamation.css";
 
+
 export default function Reclamation() {
   const [reclamation, setReclamation] = useState([]);
   const [idResponsable, setIdResponsable] = useState("");
@@ -175,21 +176,7 @@ export default function Reclamation() {
         />
       </div>
       
-      {/* <label htmlFor="exampleFormControlTextarea1" className="form-label">
-        Niveau gravites
-      </label>
-      <select
-        className="form-select"
-        aria-label="Niveau gravites"
-        required
-        value={gravite}
-        onChange={(e) => setGravite(e.target.value)}
-      >
-        <option value="1">Mineur</option>
-        <option value="2">Modéré</option>
-        <option value="4">Majeur</option>
-        <option value="3">Critique</option>
-      </select> */}
+    
       <br />
       <label htmlFor="exampleFormControlTextarea1" className="form-label">
         Etat de garantie

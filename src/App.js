@@ -1,10 +1,5 @@
 import React, { createContext, useEffect, useState } from "react";
-import {
-  BrowserRouter,
-  NavLink,
-  Route,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
 import logo from "./images/logo.svg";
 import logo2 from "./images/Mindray_s_logo.png";
 import "./App.css";
@@ -16,7 +11,9 @@ import Reclamation from "./Pages/Reclamation";
 import Formulaire from "./Pages/Formulaire";
 import Login from "./Pages/Login";
 import Historique from "./Pages/Historique";
+import HistoriqueDemaintenance from "./Pages/HistoriqueDemaintenance";
 import Cookies from "js-cookie";
+import TarsChatbot from "./Pages/TarsChatbot";
 
 export const CartContext = createContext();
 
@@ -36,8 +33,6 @@ function App() {
     window.location.href = "/login";
   }
   return (
-    
-
     <CartContext.Provider value={{ login, setLogin }}>
       <BrowserRouter>
         {showNavbar && !Cookies.get(Login) && (
@@ -48,11 +43,28 @@ function App() {
             </NavLink>
             <div>
               <NavLink to="/about">About</NavLink>
-              <NavLink to="/product">pieces de rechange</NavLink>
+              {Cookies.get("login") == "bio" && (
+                <NavLink to="/product">pieces de rechange</NavLink>
+              )}
+              {Cookies.get("login") == "medcin" && (
               <NavLink to="/reclamation">Reclamation</NavLink>
+              )}
+              {Cookies.get("login") == "medcin" && (
               <NavLink to="/formulaire">Formulaire</NavLink>
+              )}
+              {Cookies.get("login") == "bio" && (
               <NavLink to="/historique">Historique</NavLink>
-              <button type="button" className="btn btn-danger" onClick={hundleLogout}>
+              )}
+              {Cookies.get("login") == "bio" && (
+              <NavLink to="/HistoriqueDemaintenance">
+                Historique de maintenance
+              </NavLink>
+              )}
+              <button
+                type="button"
+                className="btn btn-danger"
+                onClick={hundleLogout}
+              >
                 logout
               </button>
             </div>
@@ -66,8 +78,13 @@ function App() {
           <Route path="/formulaire" element={<Formulaire />} />
           <Route path="/historique" element={<Historique />} />
           <Route path="/login" element={<Login />} />
+          <Route
+            path="/HistoriqueDemaintenance"
+            element={<HistoriqueDemaintenance />}
+          />
         </Routes>
       </BrowserRouter>
+      {Cookies.get("login") == "medcin" && <TarsChatbot />}
     </CartContext.Provider>
   );
 }

@@ -3,9 +3,6 @@ import Table from "react-bootstrap/Table";
 
 import "./Historique.css";
 export default function Historique() {
-    const myStyle = {
-        
-    };
   return (
     <div className="historique">
       <Table striped bordered hover>
