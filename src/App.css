@@ -12,7 +12,7 @@
   text-transform: uppercase;
   color: #32343a;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: bolder;
   margin: 0 1rem;
 }
 img {
@@ -20,9 +20,7 @@ img {
   aspect-ratio: 1/1;
 }
 .Nav a:hover {
-  color: black;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  color: #1745af;
   text-decoration: none;
 }
 

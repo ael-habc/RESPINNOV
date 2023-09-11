@@ -5,6 +5,7 @@ import Modal from "react-bootstrap/Modal";
 import { MDBInput } from "mdb-react-ui-kit";
 import "./Reclamation.css";
 import { Toaster, toast } from "react-hot-toast";
+import Table from "react-bootstrap/Table";
 
 export default function Reclamation() {
   const [reclamation, setReclamation] = useState([]);
@@ -260,6 +261,7 @@ function Example(props) {
         Historique
       </Button>
       <Modal
+      size="lg"
         show={show}
         onHide={handleClose}
         aria-labelledby="contained-modal-title-vcenter"
@@ -268,7 +270,27 @@ function Example(props) {
         <Modal.Header closeButton>
           <Modal.Title>{props.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{props.fullDiscription}</Modal.Body>
+        <Modal.Body>
+        <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Numere de reclamation</th>
+                <th>Id responsable</th>
+                <th>Symptomes Observes</th>
+                <th>Date</th>
+                <th>Modele</th>
+                <th>Numéro</th>
+                <th>Date</th>
+                <th>Durée</th>
+                <th>et </th>
+                <th>Lieu de l'intervention</th>
+                <th>supprimer</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </Table>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={handleClose}>
             Close
