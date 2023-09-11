@@ -85,7 +85,7 @@ export default function HistoriqueDemaintenance() {
   const [Historique2, setHistorique2] = useState([
     {
         id: 1,
-        date:"25/1/2023",
+        date:"17/08/2023",
         modele  : "A9",
         panne: "Fuite d'air détectée au niveau du circuit de ventilation",
         description: "1. Isolation de la source de la fuite : Le circuit de ventilation a été soigneusement inspecté pour localiser la source exacte de la fuite d'air. La fuite a été détectée au niveau d'une connexion détachée.                                            2. Réparation de la fuite : La connexion défectueuse a été réparée en remplaçant le joint d'étanchéité et en assurant une fixation correcte du composant.                           3. Tests de vérification : Après la réparation, des tests de pression ont été effectués pour garantir l'absence de fuite d'air résiduelle. Le circuit a été testé avec succès pour s'assurer qu'il était étanche et sécuritaire pour une utilisation future.",
@@ -97,7 +97,7 @@ export default function HistoriqueDemaintenance() {
     },
     {
         id: 2,
-        date:"16/4/2023",
+        date:"28/08/2023",
         modele  : "WATO EX-65 Pro",
         panne: "Alarmes non fonctionnelles",
         description: "'1. Inspection du système d'alarme : L'inspection a révélé une défaillance au niveau de la carte électronique du système d'alarme.",

@@ -136,8 +136,7 @@ export default function Reclamation() {
           ></textarea>
           <label htmlFor="floatingTextarea">Symptomes Observes</label>
         </div>
-      ) : null  
-      }
+      ) : null}
       <br />
       <div className="form-floating">
         <textarea
@@ -237,7 +236,7 @@ export default function Reclamation() {
       </div>
       <br />
       <div className="d-grid gap-3 col-4 mx-auto ">
-        <Example />
+        <Example id="test" />
         <button
           type="submit"
           className="btn btn-success btn-lg"
@@ -261,33 +260,72 @@ function Example(props) {
         Historique
       </Button>
       <Modal
+      id="modal"
       size="lg"
         show={show}
         onHide={handleClose}
         aria-labelledby="contained-modal-title-vcenter"
+        dialogClassName="modal-90w"
         centered
       >
         <Modal.Header closeButton>
           <Modal.Title>{props.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <Table striped bordered hover>
+          <Table striped bordered hover>
             <thead>
               <tr>
                 <th>Numere de reclamation</th>
                 <th>Id responsable</th>
                 <th>Symptomes Observes</th>
-                <th>Date</th>
                 <th>Modele</th>
-                <th>Numéro</th>
+                <th>Numéro de série S/N</th>
                 <th>Date</th>
-                <th>Durée</th>
-                <th>et </th>
-                <th>Lieu de l'intervention</th>
-                <th>supprimer</th>
+                <th>Etat de garantie</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody>
+              <tr>
+                <td>1</td>
+                <td>AlamiOmar-56</td>
+                <td>Fuite d'air ou de gaz</td>
+                <td>A9</td>
+                <td>ARZC-0142</td>
+                <td>15/08/2023</td>
+                <td>En cours de garantie</td>
+                <td>Résolu</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>AliTazi-23</td>
+                <td>Autre : Alarmes non fonctionnelles</td>
+                <td>WATO EX-65 Pro</td>
+                <td>ARZF-0087</td>
+                <td>26/08/2023</td>
+                <td>Non applicable</td>
+                <td>Résolu</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>MeriemBellaj-21</td>
+                <td>Problèmes de contrôle de pression</td>
+                <td>WATO EX-35</td>
+                <td>ARZD-0117</td>
+                <td>01/09/2023</td>
+                <td>Garantie expirée</td>
+                <td>En cours de traitement</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>LeilaBilali-71</td>
+                <td>Bruits ou vibrations inhabituels</td>
+                <td>A9</td>
+                <td>ARZC-0142</td>
+                <td>11/09/2023</td>
+                <td>Garantie expirée</td>
+                <td>En phase d'attente</td>
+              </tr>
             </tbody>
           </Table>
         </Modal.Body>

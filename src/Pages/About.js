@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Home.css";
 import logo from "../images/logo.svg";
+import './About.css'
 
 export default function About() {
   return (
@@ -14,8 +15,8 @@ export default function About() {
         </p>
       </div>
       <hr />
-      <div className="about-main">
-        <div className="about-main-left">
+      <div className="main main_about">
+        <div className="about_left">
           <p>
             Bienvenue dans l'univers de RespInnov, une plateforme numérique
             révolutionnaire dédiée à l'excellence de la gestion des respirateurs
@@ -26,7 +27,7 @@ export default function About() {
             professionnels de santé au Maroc.
           </p>
         </div>
-        <div className="about-main-right">
+        <div className="about_right">
           <p>
             RespInnov est donc l'aboutissement d'une synergie sans précédent
             entre technologie de pointe, expertise médicale et engagement envers
@@ -40,7 +41,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="footer">
+      <div className="about_footer footer">
         <img src={logo} alt="logo" />
         <div className="footer_menu">
           <h1>Menu</h1>

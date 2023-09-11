@@ -55,17 +55,6 @@ function App() {
         >
           <img src={logo} alt="logo" id="logoLogin" />
           <img src={logo2} alt="logo2" id="logoLogin2" />
-
-          {/* <h1 className="my-5 display-3 fw-bold ls-tight px-3">RESPINNOV</h1>
-
-          <p
-            className="px-3"
-            style={{ color: "hsl(217, 10%, 60%)" }}
-            id="titleLogin"
-          >
-            Un souffle d'excellence technologique pour une éxperience de
-            respirateur d'anesthésie repensée
-          </p> */}
         </MDBCol>
 
         <MDBCol md="6" id="loginForm">
