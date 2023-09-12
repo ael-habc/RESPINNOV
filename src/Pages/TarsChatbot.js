@@ -21,8 +21,8 @@ const TarsChatbot = () => {
     })();
 
     window.tarsSettings = {
-      convid: 'ggZr9C',
-      href: 'https://chatbot.hellotars.com/conv/ggZr9C',
+      convid: 'vU9xTx',
+      href: 'https://chatbot.hellotars.com/conv/vU9xTx',
     };
   }, []);
 
